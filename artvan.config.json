@@ -1,0 +1,33 @@
+{
+	"default": {
+		"sources": {
+			"http://127.0.0.1:5984/production": ["couchdb", "couchdb-lucene"],
+			"http://127.0.0.1:5984/scans": "couchdb"
+		},
+		"pool-size": 3,
+		"update-strategy": "changefeed"
+	}
+	
+	{
+		"host": ,
+		"port": 5984,
+		"name": "production"  
+	}
+	
+	"http://127.0.0.1:5984": {
+		"production": {
+		}
+	}
+	
+	"http": {
+		"
+	}
+	
+	{
+		"connection": "http://127.0.0.1:5984",
+		"containers:" ["production", "scans"]
+	}
+	
+	"http://127.0.0.1:5984": 
+}
+

@@ -1,0 +1,18 @@
+{
+	"language": "javascript",
+	"views": {
+		"all": {
+			"map": "function(doc) { if(doc.$type) }",
+			"reduce": "_count"
+		},
+		
+		"available": {
+			"map": "function(doc) { if(doc.$type === 'Clone' && doc.status === 'available') { emit() }}",
+			"reduce": "_count"
+		},
+		
+		"resource": {
+			"map": "function(doc) { if(doc.$type === '')}"
+		}
+	}
+}

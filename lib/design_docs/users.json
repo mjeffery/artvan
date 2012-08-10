@@ -1,0 +1,8 @@
+{
+	"language": "javascript",
+	"views": {
+		"byPrincipal": {
+			"map": "function(doc) { if(doc.$type === 'User') { emit(doc.username, { password: doc.password, salt: doc.salt })} }"
+		}
+	}
+}
